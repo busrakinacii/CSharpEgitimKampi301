@@ -46,6 +46,10 @@
     <Compile Include="Abstract\IGenericService.cs" />
     <Compile Include="Abstract\IOrderService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,8 +62,6 @@
       <Name>CSharpEgitimKampi301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
