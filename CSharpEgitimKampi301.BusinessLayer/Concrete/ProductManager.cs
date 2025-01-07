@@ -18,12 +18,17 @@ namespace CSharpEgitimKampi301.BusinessLayer.Concrete
             _productDal = productDal;
         }
 
+        public List<object> TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
+        }
+
         public void TDelete(Product entity)
         {
             _productDal.Delete(entity);
         }
 
-        public List<Product> TGetAll()  
+        public List<Product> TGetAll()
         {
             return _productDal.GetAll();
         }

@@ -59,7 +59,7 @@ namespace CSharpEgitimKampi301.PresentationLayer
             int updatedId = int.Parse(txtCategoryId.Text);
             var updatedValue = _categoryService.TGetById(updatedId);
             updatedValue.CategoryName = txtCategoryName.Text;
-            //updatedValue.CategoryStatus = true;
+            updatedValue.CategoryStatus = 1;
             _categoryService.TUpdate(updatedValue);
 
 
